@@ -78,7 +78,7 @@
 
                                 </div>
                             </div>
-                            <a href="<?php echo e(route('oders.create',$product)); ?>" type="button" class="btn btn-primary">Đặt hàng</a>
+                            <a href="<?php echo e(route('orders.create',$product)); ?>" type="button" class="btn btn-primary">Đặt hàng</a>
                             <hr>
                         </div>
                     </div>

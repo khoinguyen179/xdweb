@@ -222,6 +222,20 @@ return [
         ]
 
     ],
+    'order'=>[
+        'name'=>'Tên người đặt hàng',
+        'phone'=>'Số điện thoại',
+        'address'=>'Địa chỉ nhận hàng',
+        'note'=>'Ghi chú',
+        'validation'=>[
+            'name_not_empty'=>'Tên người đặt không được trống',
+            'address_not_empty'=>'Địa chỉ không được để trống',
+            'phone_not_empty'=>'Số điện thoại không được để trống',
+            'phone_number'=>'Số điện thoại chỉ được bao gồm số',
+            'quantity_not_empty'=>'Số lượng không được để trống',
+            'quantity_number'=>'Số lượng phải là một số'
+        ]
+    ],
     'cuisine' => [
         'title' => 'Quản lý thực đơn',
         'name_cate_menu' => 'Chuyên mục',

@@ -1,11 +1,11 @@
 <div class="left-sidenav">
     <ul class="metismenu left-sidenav-menu">
-{{--        <li class="{{ (request()->is('admin/admins*')) ? 'mm-active' : '' }}">--}}
-{{--            <a href="{{ route('admins.index') }}">--}}
-{{--                <i class="ti-user"></i>--}}
-{{--                <span>{{ trans('site.admin.title') }}</span>--}}
-{{--            </a>--}}
-{{--        </li>--}}
+        {{--        <li class="{{ (request()->is('admin/admins*')) ? 'mm-active' : '' }}">--}}
+        {{--            <a href="{{ route('admins.index') }}">--}}
+        {{--                <i class="ti-user"></i>--}}
+        {{--                <span>{{ trans('site.admin.title') }}</span>--}}
+        {{--            </a>--}}
+        {{--        </li>--}}
 
         <li class="{{ (request()->is('admin/categories*')) ? 'mm-active' : '' }}">
             <a href="{{ route('categories.index') }}">
@@ -19,12 +19,12 @@
                 <span>Quản lý món ăn</span>
             </a>
         </li>
-        {{--        <li class="{{ (request()->is('admin/products*')) ? 'mm-active' : '' }}">--}}
-        {{--            <a href="{{ route('product.index') }}">--}}
-        {{--                <i class="fa fa-building"></i>--}}
-        {{--                <span>{{ trans('site.oder.title') }}</span>--}}
-        {{--            </a>--}}
-        {{--        </li>--}}
+        <li class="{{ (request()->is('admin/products*')) ? 'mm-active' : '' }}">
+            <a href="{{ route('admin-orders.index') }}">
+                <i class="fa fa-building"></i>
+                <span>Quản lý đơn hàng</span>
+            </a>
+        </li>
 
     </ul>
 </div>

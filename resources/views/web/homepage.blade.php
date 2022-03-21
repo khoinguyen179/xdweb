@@ -77,7 +77,7 @@
                                     {{$product->detail}}
                                 </div>
                             </div>
-                            <a href="{{route('oders.create',$product)}}" type="button" class="btn btn-primary">Đặt hàng</a>
+                            <a href="{{route('orders.create',$product)}}" type="button" class="btn btn-primary">Đặt hàng</a>
                             <hr>
                         </div>
                     </div>

@@ -28,51 +28,54 @@
                 <!-- li end -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!-- .module-cart end -->
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- .module-cart end -->
                 <!-- Module Search -->
+                <li class="has-dropdown mega-dropdown active">
+                    <a href="<?php echo e(route('orders.create')); ?>">Đặt hàng</a>
+                </li>
                 <div class="module module-search pull-left">
                     <div class="module-icon search-icon">
                         <i class="fa fa-search"></i>

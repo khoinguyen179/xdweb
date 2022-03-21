@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 $prefix = "Web";
 Route::get('/', $prefix.'\HomeController@index')->name('homes');
 Route::resource('/homecategories',$prefix.'\HomeCategory');
-Route::resource('/oders',$prefix.'\OderController');
+Route::resource('/orders',$prefix.'\OrderController');
 Route::resource('/searchs',$prefix.'\SearchController');
 Route::get('/show/', $prefix.'\HomeController@show')->name('show');
 Route::namespace('user')->group(function () {

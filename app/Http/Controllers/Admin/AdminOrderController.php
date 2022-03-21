@@ -1,14 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Web;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Category;
-use App\Models\Oder;
-use App\Models\Product;
+use App\Models\Order;
 use Illuminate\Http\Request;
 
-class OderController extends Controller
+class AdminOrderController extends BaseAdminController
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +15,8 @@ class OderController extends Controller
      */
     public function index()
     {
-
+        $orders=Order::all();
+        return view('admin.admin-order.index',compact('orders'));
     }
 
     /**
@@ -25,12 +24,9 @@ class OderController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Product $product)
+    public function create()
     {
-
-        $categories=Category::all();
-        dd($product);
-        return view('oder.index',compact('categories','product'));
+        //
     }
 
     /**
@@ -47,10 +43,10 @@ class OderController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Oder  $oder
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Oder $oder)
+    public function show($id)
     {
         //
     }
@@ -58,22 +54,22 @@ class OderController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Oder  $oder
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Oder $oder)
+    public function edit($id)
     {
-
+        //
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Oder  $oder
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Oder $oder)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -81,11 +77,13 @@ class OderController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Oder  $oder
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Oder $oder)
+    public function destroy($id)
     {
-        //
+        $order=Order::find($id);
+        $order->delete();
+        return redirect()->route('admin-orders.index');
     }
 }

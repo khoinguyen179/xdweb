@@ -44,6 +44,9 @@ class CategoryController extends BaseAdminController
     public function destroy($id)
     {
         $category = Category::find($id);
+        $products = $category->products()->update([
+            'category_id'=>null,
+        ]);
         $category->delete();
         return redirect()->route('categories.index');
 

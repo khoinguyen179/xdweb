@@ -32,6 +32,7 @@ Route::namespace('admin')->group(function () {
             Route::resource('/admins', 'AdminController');
             Route::resource('/categories','CategoryController');
             Route::resource('/products','ProductController');
+            Route::resource('/admin-orders','AdminOrderController');
 
             Route::group(['prefix' => 'admins'], function (){
                 Route::post('enable_2fa', 'AdminController@enable2fa')->name('admins.enable_2fa');

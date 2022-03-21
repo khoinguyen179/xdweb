@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
-@include('web/layouts/header')
+<?php echo $__env->make('web/layouts/header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+        @import  url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
         *{
             font-family: 'Comfortaa', cursive;
         }
@@ -23,7 +23,7 @@
 ============================================= -->
 <div id="wrapper" class="wrapper clearfix">
     <header id="navbar-spy" class="header header-1 header-transparent header-fixed">
-        @include('web/layouts/menu/menu')
+        <?php echo $__env->make('web/layouts/menu/menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     </header>
     <!-- Page Title #1
     ============================================= -->
@@ -56,41 +56,43 @@
                     <div class="heading heading-1 mb-50 text--center">
                         <p class="heading--subtitle">June Food</p>
                         <hr>
-                        <h2>{{$category->name}}</h2>
+                        <h2><?php echo e($category->name); ?></h2>
                     </div>
                 </div>
 
             </div>
             <!-- .row end -->
             <div class="row">
-                @foreach($products as $product)
+                <?php $__currentLoopData = $products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <div class="col-xs-4 col-sm-4 col-md-4">
                         <div class="blog-entry">
                             <div class="entry--content">
                                 <div class="entry--title">
-                                    <h4><a href="#">{{$product->name}}</a></h4>
+                                    <h4><a href="#"><?php echo e($product->name); ?></a></h4>
                                 </div>
                                 <div class="entry--img">
                                     <a href="#">
-                                        <img src="{{ Sanitize::showImage($product->image) }}" width="300"/>
+                                        <img src="<?php echo e(Sanitize::showImage($product->image)); ?>" width="300"/>
                                     </a>
                                 </div>
                                 <div class="entry--bio">
-                                    {{$product->detail}}
+                                    <?php echo e($product->detail); ?>
+
                                 </div>
                             </div>
 
                             <hr>
                         </div>
                     </div>
-                @endforeach
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             </div>
         </div>
         <!-- .container end -->
     </section>
     <!-- #blog end -->
-    @include('web/layouts/footer')
+    <?php echo $__env->make('web/layouts/footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </div>
-@include('web/layouts/script')
+<?php echo $__env->make('web/layouts/script', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </body>
 </html>
+<?php /**PATH C:\Users\ADMIN\OneDrive\Desktop\web (1)\resources\views/web/view.blade.php ENDPATH**/ ?>

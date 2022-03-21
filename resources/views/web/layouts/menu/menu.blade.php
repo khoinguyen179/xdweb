@@ -28,51 +28,54 @@
                 <!-- li end -->
 
 
-{{--                <div class="module module-cart pull-left">--}}
-{{--                    <div class="module-icon cart-icon">--}}
-{{--                        <i class="fa fa-shopping-cart"></i>--}}
-{{--                        <span class="title">shop cart</span>--}}
-{{--                        <label class="module-label">2</label>--}}
-{{--                    </div>--}}
-{{--                    <div class="module-content module-box cart-box">--}}
-{{--                        <div class="cart-overview">--}}
-{{--                            <ul class="list-unstyled">--}}
-{{--                                <li>--}}
-{{--                                    <img class="img-responsive" src="assets/images/shop/thumb/6.jpg" alt="product"/>--}}
-{{--                                    <div class="product-meta">--}}
-{{--                                        <h5 class="product-title">Red Tape Shoes</h5>--}}
-{{--                                        <p class="product-price">1 x $ 34.00</p>--}}
-{{--                                    </div>--}}
-{{--                                    <a class="cart-cancel" href="#">cancel</a>--}}
-{{--                                </li>--}}
-{{--                                <li>--}}
-{{--                                    <img class="img-responsive" src="assets/images/shop/thumb/7.jpg" alt="product"/>--}}
-{{--                                    <div class="product-meta">--}}
-{{--                                        <h5 class="product-title">Brave Sweater</h5>--}}
-{{--                                        <p class="product-price">1 x $ 32.00</p>--}}
-{{--                                    </div>--}}
-{{--                                    <a class="cart-cancel" href="#">cancel</a>--}}
-{{--                                </li>--}}
-{{--                            </ul>--}}
-{{--                        </div>--}}
-{{--                        <div class="cart-total">--}}
-{{--                            <div class="total-desc">--}}
-{{--                                Subtotal:--}}
-{{--                            </div>--}}
-{{--                            <div class="total-price">--}}
-{{--                                $73.00--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="clearfix">--}}
-{{--                        </div>--}}
-{{--                        <div class="cart--control">--}}
-{{--                            <a class="btn btn--primary btn--block btn--rounded mb-10" href="#">view cart</a>--}}
-{{--                            <a class="btn btn--white btn--bordered btn--rounded btn--block" href="#">Checkout</a>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-                <!-- .module-cart end -->
+            {{--                <div class="module module-cart pull-left">--}}
+            {{--                    <div class="module-icon cart-icon">--}}
+            {{--                        <i class="fa fa-shopping-cart"></i>--}}
+            {{--                        <span class="title">shop cart</span>--}}
+            {{--                        <label class="module-label">2</label>--}}
+            {{--                    </div>--}}
+            {{--                    <div class="module-content module-box cart-box">--}}
+            {{--                        <div class="cart-overview">--}}
+            {{--                            <ul class="list-unstyled">--}}
+            {{--                                <li>--}}
+            {{--                                    <img class="img-responsive" src="assets/images/shop/thumb/6.jpg" alt="product"/>--}}
+            {{--                                    <div class="product-meta">--}}
+            {{--                                        <h5 class="product-title">Red Tape Shoes</h5>--}}
+            {{--                                        <p class="product-price">1 x $ 34.00</p>--}}
+            {{--                                    </div>--}}
+            {{--                                    <a class="cart-cancel" href="#">cancel</a>--}}
+            {{--                                </li>--}}
+            {{--                                <li>--}}
+            {{--                                    <img class="img-responsive" src="assets/images/shop/thumb/7.jpg" alt="product"/>--}}
+            {{--                                    <div class="product-meta">--}}
+            {{--                                        <h5 class="product-title">Brave Sweater</h5>--}}
+            {{--                                        <p class="product-price">1 x $ 32.00</p>--}}
+            {{--                                    </div>--}}
+            {{--                                    <a class="cart-cancel" href="#">cancel</a>--}}
+            {{--                                </li>--}}
+            {{--                            </ul>--}}
+            {{--                        </div>--}}
+            {{--                        <div class="cart-total">--}}
+            {{--                            <div class="total-desc">--}}
+            {{--                                Subtotal:--}}
+            {{--                            </div>--}}
+            {{--                            <div class="total-price">--}}
+            {{--                                $73.00--}}
+            {{--                            </div>--}}
+            {{--                        </div>--}}
+            {{--                        <div class="clearfix">--}}
+            {{--                        </div>--}}
+            {{--                        <div class="cart--control">--}}
+            {{--                            <a class="btn btn--primary btn--block btn--rounded mb-10" href="#">view cart</a>--}}
+            {{--                            <a class="btn btn--white btn--bordered btn--rounded btn--block" href="#">Checkout</a>--}}
+            {{--                        </div>--}}
+            {{--                    </div>--}}
+            {{--                </div>--}}
+            <!-- .module-cart end -->
                 <!-- Module Search -->
+                <li class="has-dropdown mega-dropdown active">
+                    <a href="{{route('orders.create')}}">Đặt hàng</a>
+                </li>
                 <div class="module module-search pull-left">
                     <div class="module-icon search-icon">
                         <i class="fa fa-search"></i>
